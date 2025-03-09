@@ -1,0 +1,61 @@
+<!-- Define la sección de contacto con un ID único y una clase para estilos -->
+<section id="contacto" class="section">
+    <!-- Contenedor principal que agrupa las cajas de información y formulario -->
+    <div class="contact-container">
+        <!-- Caja para la información de contacto con animación AOS a la derecha -->
+        <div class="contact-box contact-info" data-aos="fade-right">
+            <!-- Título vacío que será rellenado dinámicamente con "Información de contacto" -->
+            <h2></h2>
+            <!-- Párrafo vacío como placeholder para el correo electrónico -->
+            <p></p>
+            <!-- Párrafo vacío como placeholder para el número de teléfono -->
+            <p></p>
+            <!-- Párrafo vacío como placeholder para el enlace de LinkedIn -->
+            <p></p>
+        </div>
+        <!-- Caja para el formulario de contacto con animación AOS a la izquierda -->
+        <div class="contact-box contact-form" data-aos="fade-left">
+            <!-- Título vacío que será rellenado dinámicamente con "Formulario de contacto" -->
+            <h2></h2>
+            <!-- Formulario con ID único para ser manejado por JavaScript -->
+            <form id="contact-form">
+                <!-- Fila que agrupa los campos de nombre y apellido -->
+                <div class="form-row">
+                    <!-- Grupo de formulario para el campo "Nombre" -->
+                    <div class="form-group">
+                        <!-- Etiqueta vacía que será rellenada con "Nombre" -->
+                        <label for="nombre"></label>
+                        <!-- Campo de entrada de texto para el nombre, obligatorio -->
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    <!-- Grupo de formulario para el campo "Apellido" -->
+                    <div class="form-group">
+                        <!-- Etiqueta vacía que será rellenada con "Apellido" -->
+                        <label for="apellido"></label>
+                        <!-- Campo de entrada de texto para el apellido, obligatorio -->
+                        <input type="text" id="apellido" name="apellido" required>
+                    </div>
+                </div>
+                <!-- Grupo de formulario para el campo "Email" -->
+                <div class="form-group">
+                    <!-- Etiqueta vacía que será rellenada con "Email *" -->
+                    <label for="email"></label>
+                    <!-- Campo de entrada de correo electrónico, obligatorio -->
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <!-- Grupo de formulario para el campo "Mensaje" -->
+                <div class="form-group">
+                    <!-- Etiqueta vacía que será rellenada con "Escribe un mensaje" -->
+                    <label for="mensaje"></label>
+                    <!-- Área de texto para el mensaje, con 5 filas y obligatorio -->
+                    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                </div>
+                <!-- Contenedor para el botón de envío -->
+                <div class="form-submit">
+                    <!-- Botón de envío con animación AOS de zoom, texto vacío para "Enviar" -->
+                    <button type="submit" data-aos="zoom-in"></button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
